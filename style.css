@@ -1,23 +1,98 @@
-
-
-.jackbox-pack {
+/* NAVBAR */
+.nav {
     display: flex;
-    flex-direction: column;
-    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h1 {
+    font-family: 'Permanent Marker', cursive;
+    margin: 10px;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    background-color: olive;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+}
+
+.nav a:hover {
+    background-color: orchid;
+}
+
+/* NUMBER OF PLAYERS */
+.players {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numbers, h2 {
+    margin: 5px 10px;
+    padding: 0;
+    display: flex;
+}
+
+.numbers a {
+    margin-left: 10px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    background-color: greenyellow;
+    text-decoration: none;
+}
+
+.numbers a:hover, .numbers a.active {
+    background-color: teal;
+}
+
+/* JACKBOX GAMES */
+.jackbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.jackbox-pack {
+    width: 30%;
+    flex-grow: 1;
+    margin: 5px;
+    align-items: stretch;
 }
 
 .jackbox-games {
-    display: flex;
-    flex-direction: column;
+    padding: 0 10px;
 }
 
 .jackbox-game {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: linen;
+    flex-direction: column;
     border-bottom: 1px solid #aaa;
+    background-color: gray;
     padding: 10px;
+}
+
+.jackbox-game div {
+    flex-direction: row;
+    display: flex;
+}
+
+.jackbox-game p {
+    padding: 5px;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.jackbox-game:hover {
+    background-color: darkseagreen;
+    cursor: pointer;
 }
 
 .jackbox-game h3, .jackbox-game p {
