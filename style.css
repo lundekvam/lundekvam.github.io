@@ -68,6 +68,7 @@ body * .game, .people {
     align-items: stretch;
 }
 
+
 .jackbox-pack h2 {
     margin: 0;
     padding: 10px;
@@ -111,4 +112,22 @@ body * .game, .people {
 .jackbox-game h3, .jackbox-game p {
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: 1000px){
+    .jackbox-pack {
+        width: 48%;
+    }
+}
+
+@media (max-width: 850px){
+    .nav .numbers {
+        display: none;
+    }
+}
+
+@media (max-width: 650px){
+    .jackbox-pack {
+        width: 98%;
+    }
 }
