@@ -42,12 +42,12 @@ body * .game, .people {
 }
 
 .nav a:hover, .nav a.active {
-    background-color: rgb(106, 158, 158);
+    background-color: rgb(172, 204, 204);
 }
 
 .nav a {
     text-decoration: none;
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(221, 219, 219);
     padding: 10px;
     color: black;
     margin: 5px;
@@ -78,7 +78,7 @@ body * .game, .people {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #aaa;
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(221, 219, 219);
     padding: 10px;
 }
 
@@ -105,7 +105,7 @@ body * .game, .people {
 }
 
 .jackbox-game:hover {
-    background-color: rgb(106, 158, 158);
+    background-color: rgb(172, 204, 204);
     cursor: pointer;
 }
 
