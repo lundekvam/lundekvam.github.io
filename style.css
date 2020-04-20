@@ -1,0 +1,26 @@
+
+
+.jackbox-pack {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.jackbox-games {
+    display: flex;
+    flex-direction: column;
+}
+
+.jackbox-game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: linen;
+    border-bottom: 1px solid #aaa;
+    padding: 10px;
+}
+
+.jackbox-game h3, .jackbox-game p {
+    padding: 0;
+    margin: 0;
+}
