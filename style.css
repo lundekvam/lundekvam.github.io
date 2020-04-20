@@ -1,57 +1,53 @@
+body * h1, h2, .game, a {
+    font-family: 'Permanent Marker', cursive;
+}
+
+body * p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 /* NAVBAR */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px;
 }
 
 .nav h1 {
     font-family: 'Permanent Marker', cursive;
-    margin: 10px;
     padding: 0;
+}
+
+.nav .players, .numbers {
+    display: flex;
+}
+
+.nav .numbers a, .nav .numbers span {
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+.nav .numbers span {
+    font-size: 40px;
+}
+
+.nav a:hover, .nav a.active {
+    background-color: rgb(106, 158, 158);
 }
 
 .nav a {
     text-decoration: none;
-    background-color: olive;
+    background-color: rgb(192, 192, 192);
     padding: 10px;
     color: black;
-    margin: 10px;
+    margin: 5px;
 }
 
-.nav a:hover {
-    background-color: orchid;
-}
-
-/* NUMBER OF PLAYERS */
-.players {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.numbers, h2 {
-    margin: 5px 10px;
-    padding: 0;
-    display: flex;
-}
-
-.numbers a {
-    margin-left: 10px;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: black;
-    background-color: greenyellow;
-    text-decoration: none;
-}
-
-.numbers a:hover, .numbers a.active {
-    background-color: teal;
-}
 
 /* JACKBOX GAMES */
 .jackbox {
@@ -67,15 +63,16 @@
     align-items: stretch;
 }
 
-.jackbox-games {
-    padding: 0 10px;
+.jackbox-pack h2 {
+    margin: 0;
+    padding: 10px;
 }
 
 .jackbox-game {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #aaa;
-    background-color: gray;
+    background-color: rgb(192, 192, 192);
     padding: 10px;
 }
 
@@ -91,7 +88,7 @@
 }
 
 .jackbox-game:hover {
-    background-color: darkseagreen;
+    background-color: rgb(106, 158, 158);
     cursor: pointer;
 }
 
