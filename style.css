@@ -1,9 +1,14 @@
-body * h1, h2, .game, a {
+body * h1, h2, .game, a, .people {
     font-family: 'Permanent Marker', cursive;
 }
 
 body * p {
     font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
+body * .game, .people {
+    font-size: 18px;
 }
 
 /* NAVBAR */
@@ -79,7 +84,18 @@ body * p {
 .jackbox-game div {
     flex-direction: row;
     display: flex;
+    justify-content: space-between;
 }
+
+.jackbox-game div .people {
+    align-items: center;
+    display: flex;
+}
+
+.jackbox-game div .people span {
+    font-size: unset;
+    padding-right: 5px;
+} 
 
 .jackbox-game p {
     padding: 5px;
