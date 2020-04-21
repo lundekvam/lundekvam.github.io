@@ -48,6 +48,11 @@ body * .game, .people {
     color: #bfd3b5;
 }
 
+.nav .numbers-mobile span {
+    font-size: 30px;
+    color: #bfd3b5;
+}
+
 .nav a:hover, .nav a.active {
     background-color: #dce6d7;
 }
