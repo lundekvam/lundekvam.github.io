@@ -1,5 +1,6 @@
 body * h1, h2, .game, a, .people {
     font-family: 'Permanent Marker', cursive;
+    color: #1f1f1f;
 }
 
 body * p {
@@ -47,14 +48,14 @@ body * .game, .people {
 }
 
 .nav a:hover, .nav a.active {
-    background-color: #92C88C;
+    background-color: #daf0ce;
 }
 
 .nav a {
     text-decoration: none;
-    background-color: #B7F5AF;
+    background-color: #e2f6d7;
     padding: 10px;
-    color: black;
+    color: #1f1f1f;
     margin: 5px;
 }
 
@@ -83,8 +84,8 @@ body * .game, .people {
 .jackbox-game {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #92C88C;
-    background-color: #B7F5AF;
+    border-bottom: 1px solid #daf0ce;
+    background-color: #e2f6d7;
     padding: 10px;
 }
 
@@ -111,7 +112,7 @@ body * .game, .people {
 }
 
 .jackbox-game:hover {
-    background-color: #92C88C;
+    background-color: #daf0ce;
     cursor: pointer;
 }
 
