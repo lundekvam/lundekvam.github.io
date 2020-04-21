@@ -24,8 +24,12 @@ body * .game, .people {
     padding: 0;
 }
 
-.nav .players, .numbers {
+.nav .players, .nav .players .numbers {
     display: flex;
+}
+
+.nav .players .numbers-mobile {
+    display: none;
 }
 
 .nav .numbers a, .nav .numbers span {
@@ -121,8 +125,13 @@ body * .game, .people {
 }
 
 @media (max-width: 850px){
-    .nav .numbers {
+    .nav .players .numbers {
         display: none;
+    }
+    .nav .players .numbers-mobile {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
