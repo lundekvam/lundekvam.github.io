@@ -22,17 +22,18 @@ body * .game, .people {
 .nav h1 {
     font-family: 'Permanent Marker', cursive;
     padding: 0;
+    margin: 0;
 }
 
 .nav .players, .nav .players .numbers {
     display: flex;
 }
 
-.nav .players .numbers-mobile {
+.nav .numbers-mobile {
     display: none;
 }
 
-.nav .numbers a, .nav .numbers span {
+.nav .numbers a, .nav .numbers span  {
     width: 40px;
     padding: 0;
     justify-content: center;
@@ -46,12 +47,12 @@ body * .game, .people {
 }
 
 .nav a:hover, .nav a.active {
-    background-color: rgb(201, 221, 205);
+    background-color: #92C88C;
 }
 
 .nav a {
     text-decoration: none;
-    background-color: rgb(231, 231, 231);
+    background-color: #B7F5AF;
     padding: 10px;
     color: black;
     margin: 5px;
@@ -65,6 +66,7 @@ body * .game, .people {
     flex-wrap: wrap;
     width: 100%;
 }
+
 .jackbox-pack {
     width: 30%;
     flex-grow: 1;
@@ -81,8 +83,8 @@ body * .game, .people {
 .jackbox-game {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #aaa;
-    background-color: rgb(231, 231, 231);
+    border-bottom: 1px solid #92C88C;
+    background-color: #B7F5AF;
     padding: 10px;
 }
 
@@ -109,7 +111,7 @@ body * .game, .people {
 }
 
 .jackbox-game:hover {
-    background-color: rgb(201, 221, 205);
+    background-color: #92C88C;
     cursor: pointer;
 }
 
@@ -128,10 +130,18 @@ body * .game, .people {
     .nav .players .numbers {
         display: none;
     }
-    .nav .players .numbers-mobile {
+    .nav.nav-mobile {
+        justify-content: flex-end;
+    }
+    .nav .numbers-mobile {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .nav .numbers-mobile a {
+        width: 20px;
+        text-align: center;
     }
 }
 
