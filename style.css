@@ -1,10 +1,10 @@
 body * h1, h2, .game, a, .people {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Bebas Neue', cursive;
     color: #1f1f1f;
 }
 
 body * p {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
 
@@ -21,7 +21,7 @@ body * .game, .people {
 }
 
 .nav h1 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Bebas Neue', cursive;
     padding: 0;
     margin: 0;
 }
@@ -45,10 +45,11 @@ body * .game, .people {
 
 .nav .numbers span {
     font-size: 40px;
+    color: #bfd3b5;
 }
 
 .nav a:hover, .nav a.active {
-    background-color: #daf0ce;
+    background-color: #dce6d7;
 }
 
 .nav a {
@@ -84,9 +85,15 @@ body * .game, .people {
 .jackbox-game {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #daf0ce;
+    border-bottom: 1px solid #bfd3b5;
     background-color: #fafafa;
     padding: 10px;
+}
+
+.jackbox-game.empty {
+    background-color: white;
+    border: none;
+    color: #9b9b9b;
 }
 
 .jackbox-game div {
@@ -103,6 +110,7 @@ body * .game, .people {
 .jackbox-game div .people span {
     font-size: unset;
     padding-right: 5px;
+    color: #505050;
 } 
 
 .jackbox-game p {
@@ -112,7 +120,11 @@ body * .game, .people {
 }
 
 .jackbox-game:hover {
-    background-color: #edfce2;
+    background-color: #dce6d7;
+    cursor: pointer;
+}
+.jackbox-game.empty:hover {
+    background-color: #fff;
     cursor: pointer;
 }
 
