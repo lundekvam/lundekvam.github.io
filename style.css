@@ -82,14 +82,6 @@ body * .game, .people {
     align-items: stretch;
 }
 
-.jackbox-pack.drawful {
-    width: 30%;
-    flex-grow: unset;
-    margin: 5px;
-    align-items: stretch;
-}
-
-
 .jackbox-pack h2 {
     margin: 0;
     padding: 10px;
